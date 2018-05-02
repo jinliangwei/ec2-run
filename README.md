@@ -1,4 +1,4 @@
-This simple script lets you launch a cluster of EC2 instances on AWS, upload a different script to each instance, run those scripts in parllel, download their results in the end of the run
+This simple script lets you launch a cluster of EC2 instances on AWS, upload a different script to each instance, run those scripts in parallel, download their results in the end of the run
 and finally tear down the cluster.
 
 This script depends on [Boto](http://boto.cloudhackers.com/en/latest/) for AWS API. Install Boto via
@@ -27,7 +27,7 @@ pip install boto
    start <cluster-name>`
    This command launches a cluster named <cluster-name>, uploads the scripts, one to each instance,
    run the command, download the results and finally tear down the cluster.
--  Run script on a existing cluster:
+-  Run script on an existing cluster:
    If you already have a cluster named <cluster-name> running, you can upload scripts to it to run. Note that this will not
    terminate your cluster in the end! Example:
    `python ec2_run.py -k <key-pair-name> -i <private-key>
